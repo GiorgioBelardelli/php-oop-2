@@ -26,7 +26,11 @@ class Prodotto {
         $this -> immagine = $immagine;
     }
     public function setTitolo($titolo){
-        $this -> titolo = $titolo;
+
+        if (!is_string($titolo) || strlen($titolo) < 3)
+                throw new Exception("$titolo is not a valid titolo");
+
+            $this -> titolo = $titolo;
     }
     public function setPrezzo($prezzo){
         $this -> prezzo = $prezzo;
