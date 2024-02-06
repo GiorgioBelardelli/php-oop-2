@@ -1,4 +1,5 @@
 <?php
+require_once("./Models/traits.php");
 require_once("./Models/prodotto.php");
 require_once("./Models/categoria.php");
 require_once("./Models/giochi.php");

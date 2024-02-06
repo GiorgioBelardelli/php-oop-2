@@ -1,13 +1,9 @@
 <?php
 
+
 class Prodotto {
 
-    private $immagine;
-    private $titolo;
-    private $prezzo;
-    private $iconCategory;
-    private $type;
-    private $categoria;
+    use Params;
 
     public function __construct($_immagine, $_titolo, $_prezzo, $_iconCategory, $_type, $_categoria) {
 
